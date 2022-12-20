@@ -1,0 +1,63 @@
+{{> instructor_page/head_nav}}
+ {{> instructor_page/sidenavigation}}
+
+
+ <div class="main_content">
+        <div class="header">Edit Instructor Page</div>
+       <div class="info">
+
+
+{{!-- <h4>Welcome</h4> --}}
+ <form
+      id="registartion-form"
+      autocomplete="on"
+      method="post"
+      action="updateInstructorUser"
+    >
+   
+<h2><label>First name: </label><input type="text" id="firstnameInput" name="firstnameInput" value=" {{fname}}" /></h2>
+<h2><label>Last name:</label><input type="text" id="lastnameInput" name="lastnameInput" value="{{lname}}"/></h2>
+
+<h2><label>User Id:</label>{{user}}</h2>
+
+<h2><label>Email Id:</label>{{email}}</h2>
+<h2><label>Date of Birth :</label><input type="date" id="dobInput" name="dobInput" value="{{dob}}"/></h2>
+{{!-- <label>Gender :</label><input type="text" id="genderInput" name="genderInput" value="{{gender}}"/> --}}
+ 
+  <h2><legend>Choose your gender:
+      <select name="genderInput" id="genderInput">
+      <option value="Male">Male</option>
+      <option value="Female">Female</option> 
+    </select>
+    </legend></h2>
+      
+<h2><label>Address :</label><input type="text" id="addressInput" name="addressInput" value="{{saddress}}"/></h2>
+<h2><label>City :</label><input type="text" id="cityInput" name="cityInput" value="{{city}}"/></h2>
+<h2><label>Zip Code :</label><input type="text" id="zipcodeInput" name="zipCodeInput" value="{{zipcode}}"/></h2>
+<h2><label>Country :</label><input type="text" id="countryInput" name="countryInput" value="{{country}}"/></h2>
+<h2><label>Phone Number:</label>{{phonenumber}}</h2>
+
+{{!-- <h2>First Name: {{fname}}</h2>
+<h2>Last Name: {{lname}}</h2>
+<h2>Username: {{user}}</h2>
+<h2>Email Address: {{email}}</h2>
+<h2>Dat of Birth: {{dob}}</h2>
+<h2>Gender: {{gender}}</h2>
+<h2>Street Address: {{saddress}}</h2>
+<h2>City: {{city}}</h2>
+<h2>ZIP Code: {{zipcode}}</h2>
+<h2>Country: {{country}}</h2>
+<h2>Phone Number: {{phonenumber}}</h2> --}}
+
+<h2>Current Date/Time : {{date_time}}</h2>
+
+{{!-- logout --}}
+{{!-- <a href="/logout">Logout</a> --}}
+<h2><input id="submit-button" type="submit" value="Save" />
+ <label><a href="/instructor/instructor_profile"> Cancel </a></h2></label></h2>
+
+ </form>
+</div>
+      </div>
+ 
+{{> instructor_page/footer}}

@@ -1,0 +1,84 @@
+{{> page/head_nav}}
+ {{!-- {{> page/sidenavigation}} --}}
+ {{#if userType}}
+   {{> instructor_page/sidenavigation}}
+{{else}}
+ {{> page/sidenavigation}}
+{{/if}}
+
+
+ <div class="main_content">
+        <div class="header">Hi,{{fname}}.</div>
+        <div class="info">
+  <div>Welcome to the new "Online Course Website". This will be your platform to all the courses we offer and your learning progress.
+           If you are new to online course, we recommend you to start with our <b>html</b> tutorial.
+          </div>
+          <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sed
+            nobis ut exercitationem atque accusamus sit natus officiis totam
+            blanditiis at eum nemo, nulla et quae eius culpa eveniet
+            voluptatibus repellat illum tenetur, facilis porro. Quae fuga odio
+            perferendis itaque alias sint, beatae non maiores magnam ad, veniam
+            tenetur atque ea exercitationem earum eveniet totam ipsam magni
+            tempora aliquid ullam possimus? Tempora nobis facere porro,
+            praesentium magnam provident accusamus temporibus! Repellendus harum
+            veritatis itaque molestias repudiandae ea corporis maiores non
+            obcaecati libero, unde ipsum consequuntur aut consectetur culpa
+            magni omnis vero odio suscipit vitae dolor quod dignissimos
+            perferendis eos? Consequuntur!</div>
+          <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sed
+            nobis ut exercitationem atque accusamus sit natus officiis totam
+            blanditiis at eum nemo, nulla et quae eius culpa eveniet
+            voluptatibus repellat illum tenetur, facilis porro. Quae fuga odio
+            perferendis itaque alias sint, beatae non maiores magnam ad, veniam
+            tenetur atque ea exercitationem earum eveniet totam ipsam magni
+            tempora aliquid ullam possimus? Tempora nobis facere porro,
+            praesentium magnam provident accusamus temporibus! Repellendus harum
+            veritatis itaque molestias repudiandae ea corporis maiores non
+            obcaecati libero, unde ipsum consequuntur aut consectetur culpa
+            magni omnis vero odio suscipit vitae dolor quod dignissimos
+            perferendis eos? Consequuntur!</div>
+        </div>
+      </div>
+
+{{> page/footer}}
+
+
+
+{{!-- {{> instructor_page/head_nav}}
+ {{> instructor_page/sidenavigation}}
+
+
+ <div class="main_content">
+        <div class="header">Not connected to database,later part of development.</div>
+       
+       <div class="info">
+
+<form>
+  {{! first name }}
+  <label for="coursename">Course Name* :</label>
+  <input
+    type="text"
+    id="coursenameInput"
+    name="coursenameInput"
+    autocomplete="name"
+    enterkeyhint="next"
+    action="/instructor/instructorHome" method="post"
+  />
+   <label for="description:">Description</label>
+   <br />
+  <textarea
+    id="descriptionInput"
+    name="descriptionInput"
+    placeholder="Write something.."
+    style="height:100px"></textarea>
+   <br /> <br />
+
+    <label for="homepage">Add your Url:</label>
+  <input type="url" id="urlInput" name="urlInput"><br><br>
+
+  <input type="submit" value="Submit" />
+</form>
+</div>
+      </div>
+
+{{> instructor_page/footer}} --}}

@@ -1,0 +1,51 @@
+{{> page/head_nav}}
+ {{!-- {{> page/sidenavigation}} --}}
+ {{#if userType}}
+   {{> instructor_page/sidenavigation}}
+{{else}}
+ {{> page/sidenavigation}}
+{{/if}}
+
+<link rel="stylesheet" href="/public/css/course_card.css" />
+<div class="main_content">
+        <div class="header">Welcome, {{fname}}. Please Enroll to Available Courses</div>
+        <div class="info">
+          {{!-- <div>Welcome to the new "Online Course Website". This will be your platform to all the tutorials we offer and your learning progress.
+           If you are new to online course, we recommend you to start with our <b>html</b> tutorial.
+          </div> --}}
+
+          <div> 
+
+
+
+            {{#each courses}}
+
+    <div class="card">
+ 
+    <div class="card-header">Course Name : {{this.courseTitle}} ({{this.courseId}})</div>
+    <div class="card-body">Course Description :  {{this.courseDescription}}</div>
+
+    <div class="card-footer">
+       <form id="login-form" autocomplete="off" method="post" action="/enroll_course">
+        <input id ="enrollInputId" name="enrollInputId" type="hidden"  aria-setsize="10px" class="btn" value="{{this._id}}"/>
+        <button style="height:60px;width:90px;" class="btn" id="login-button" type="submit">
+          
+          {{#if already_enrolled}}
+            Go to course
+          {{else}}
+            Enroll
+          {{/if}}
+          </button>
+      </form>
+   
+    </div>
+   </div>
+{{/each}}
+</div>  
+        </div>
+      </div>
+
+
+
+
+

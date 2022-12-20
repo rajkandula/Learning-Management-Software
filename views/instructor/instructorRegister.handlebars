@@ -1,0 +1,115 @@
+<main>
+  <h1>Instructor Register Page</h1>
+  <p>Register on our website</p>
+
+  <span style="color: red;"> {{error_msg}} </span>
+
+  <div class="inputFieldsId" id="inputFieldsId">
+
+    <form
+      id="registartion-form"
+      autocomplete="on"
+      method="post"
+      action="instructor_register"
+    >
+   
+  <br />
+
+      {{!-- first name --}}
+       <div>
+        <label for="firstname">First Name* :</label>
+        <input  type="text" id="firstnameInput" name="firstnameInput" autocomplete="name" enterkeyhint="next">
+{{!-- last name --}}
+        <label for="lastname">Last Name* :</label>
+        <input  type="text" id="lastnameInput" name="lastnameInput" autocomplete="name" enterkeyhint="next">
+</div>
+<br />
+
+      {{! enter username }}
+     <div>
+      <label for="username">Enter Username* :</label>
+      <input
+        id="usernameInput"
+        type="text"
+        name="usernameInput"
+        placeholder=""
+      /></div>
+      <br />
+
+      {{! enter mail id }}
+      <div>
+      <label for="email">Enter your email* :</label>
+      <input type="email" id="emailInput" name="emailInput"  placeholder="" />
+</div>
+      <br />
+
+      {{! enter dob }}
+      <div>      <label for="birthday">Birthday:</label>
+      <input type="date" id="birthdayInput" name="birthdayInput" />
+      </div>
+<br />
+
+
+      {{! choose gender }}
+          <div>
+       <legend>Choose your gender:
+      <select name="genderInput" id="genderInput">
+      <option value="Male">Male</option>
+      <option value="Female">Female</option> 
+
+    </select>
+    </legend>
+</div>
+      <br />
+
+    {{!-- address fields --}}
+     {{> page/address}}
+      
+      {{! contact }}
+<div>
+      <label for="phone">Enter a phone number:</label>
+      <input
+        type="text"
+        id="phoneInput"
+        name="phoneInput"
+        placeholder="123-45-678"
+        
+        
+      /></div><br />
+      {{! password }}
+<div>
+      <label for="password">Create Password* :</label>
+      <input
+        id="passwordInput"
+        type="password"
+        name="passwordInput"
+        placeholder="Password"
+      /></div>
+
+     
+
+         <br />
+
+   <a href="/register">Click here for User register Page &#128072;</a>
+    <br /><br />
+
+<div>
+      <input id="submit-button"  type="submit" value="Submit" class="mysubmit" />
+      </div><br/>
+
+    </form>
+
+  </div>
+  {{#if error}}
+    <h6>{{error}}</h6>
+  {{/if}}
+
+
+  
+
+</main>
+
+<a href="/" id="hrefid"> <br />Already have an account? Click here to log-in  &#128072;</a> <br />
+
+<a href="/instructor/" id="hrefid"> <br />Already have an account? Click here to Instructor log-in  &#128072; </a><br /><br />
+

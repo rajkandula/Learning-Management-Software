@@ -1,0 +1,54 @@
+{{> page/head_nav}}
+ {{!-- {{> page/sidenavigation}} --}}
+ {{#if userType}}
+   {{> instructor_page/sidenavigation}}
+{{else}}
+ {{> page/sidenavigation}}
+{{/if}}
+
+<link rel="stylesheet" href="/public/css/course_card.css" />
+<div class="main_content">
+        <div class="header">Welcome, {{fname}}.</div>
+        <div class="info">
+          {{!-- <div>Welcome to the new "Online Course Website". This will be your platform to all the tutorials we offer and your learning progress.
+           If you are new to online course, we recommend you to start with our <b>html</b> tutorial.
+          </div> --}}
+
+          <div> 
+
+              <div class="card">
+ 
+    <div class="card-header">{{enrolled.courseTitle}} ({{this.courseId}})</div>
+    <div class="card-body">{{enrolled.courseDescription}}</div>
+
+    </div>
+                  <div  class="card">
+                  <ul>
+                
+            {{#each enrolled.courseResourse}}
+
+
+
+                  <li > <iframe height ="100%" width="100%" src={{this}}> </iframe></li>
+             {{/each}}
+                  </ul>
+
+    {{!-- <iframe src=""></iframe> --}}
+   
+    <div class="card-footer">
+
+
+      {{!-- <button class="btn"> <a href="/readCourse/{{this.courseId}}">Read more</a></button> --}}
+
+      <button class="btn btn-outline">Write Notes</button>
+    </div>
+   </div>
+</div>
+          
+        </div>
+      </div>
+
+
+
+
+

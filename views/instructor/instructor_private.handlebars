@@ -1,0 +1,38 @@
+ {{> instructor_page/head_nav}}
+ {{> instructor_page/sidenavigation}}
+
+ <link rel="stylesheet" href="/public/css/course_card.css" />
+ <div class="main_content">
+        <div class="header">Hello {{name}}, Now you can Create Courses for Students  
+          {{!-- <button id="createCourseButton"> <a href="/instructor">Create a New Course</a></button> --}}
+        <a href="/courses/createCourse">Create a New Course <i class="fa fa-pen"></i> </a>
+        </div>
+        
+       
+       <div class="info">
+
+{{!-- box --}}
+{{!-- <p style="border-width:3px; border-style:solid; border-color:#FF0000; padding: 1em;"></p> --}}
+
+
+
+
+{{#each courses}}
+
+
+
+    <div class="card">
+ 
+    <div class="card-header">{{this.courseTitle}} ({{this.courseId}})</div>
+    <div class="card-body">{{this.courseDescription}}</div>
+
+    <div class="card-footer">
+      <button class="btn"><a href="/instructor/readCourse/{{this._id}}">Read Course</a></button>
+       
+      <button class="btn"><a href="/instructor/deleteCourse/{{this._id}}">Delete Course</a></button>
+    </div>
+   </div>
+{{/each}}
+
+{{> instructor_page/footer}}
+

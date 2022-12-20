@@ -1,0 +1,49 @@
+.card {
+  background: white;
+  padding: 1rem;
+  border: 1px solid #777;
+  border-radius: 0.25rem;
+}
+
+.card-header {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.card-body {
+  font-size: 1.8rem;
+}
+
+.card-footer {
+  margin-top: 2rem;
+}
+
+.btn {
+  background: hsl(200, 50%, 50%);
+  color: white;
+  border: none;
+  padding: 0.5em 0.75em;
+  font-size: 1rem;
+  border-radius: 0.26em;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background: hsl(200, 50%, 60%);
+}
+
+.btn.btn-outline {
+  background: none;
+  border: 1px solid hsl(200, 50%, 50%);
+  color: hsl(200, 50%, 50%);
+}
+
+.btn.btn-outline:hover,
+.btn.btn.btn-outline:focus {
+  background: hsl(200, 50%, 90%);
+}
+
+.btn + .btn {
+  margin-left: 0.25rem;
+}

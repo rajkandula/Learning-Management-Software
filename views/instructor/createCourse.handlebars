@@ -1,0 +1,59 @@
+<link rel="stylesheet" type="text/css" href="/public/css/add_course.css" />
+<h1>Create Course</h1>
+
+<a href="/instructor"><i class="fas fa-home"></i>Home</a>
+
+<span style="color: red;"> {{error_msg}} </span>
+<form
+  id="create-course-form"
+  autocomplete="off"
+  method="post"
+  action="/courses/createCourse"
+>
+
+  <div class="wrapper">
+    <br />
+    <div id="courseInputFields">
+
+      {{! course name }}
+      <input
+        type="text"
+        name="courseNameInput"
+        id="courseNameInput"
+        size="100"
+        class="courseInputFields"
+        placeholder="Enter Course Name*"
+      />
+      <br />
+      {{! course id }}
+      <input
+        type="text"
+        name="courseIdInput"
+        id="courseIdInput"
+        class="courseInputFields"
+        size="100"
+        placeholder="Create Course Id*"
+      />
+      <br />
+      {{! course description }}
+      <input
+        type="text"
+        name="descriptionInput"
+        id="descriptionInput"
+        class="courseInputFields"
+        size="100"
+        placeholder="Enter Course Description"
+      />
+      <br />
+    </div>
+
+  </div>
+  <br />
+  <div class="controls">
+    <a href="#" id="add_more_fields">
+      <i class="fa fa-plus"> </i>Add More</a>
+    <a href="#" id="remove_fields"><i class="fa fa-plus"></i>Remove Field</a>
+  </div>
+  <input type="submit" value="Create Course" />
+</form>
+<script src="/public/js/add_script.js"></script>

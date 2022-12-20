@@ -1,0 +1,77 @@
+<main>
+  <link rel="stylesheet" href="/public/css/course_card.css" />
+  <div class="info">
+    <br />
+    <div class="card">
+
+      <div class="card-header">Welcome to Online Course Website Project
+        &#127891;</div>
+      <div class="card-body">
+        Online Course Website is a Learning platform. Where instructor can
+        create a new courses and students can register for the courses, and
+        students can take quizz exams on the course.</div>
+    </div>
+
+  </div>
+
+  <span style="color: red;"> {{error_msg}} </span>
+
+  <div class="card">
+
+    <div class="card-header">Instructor Login Page : Enter Instructor username
+      and password to know more about user.</div>
+    <div class="card-body">
+      <form
+        id="login-form"
+        autocomplete="off"
+        method="post"
+        action="/instructor/login"
+      >
+        <br />
+        <label for="usernameInput">Username </label>
+        &#128100;
+        <input
+          id="usernameInput"
+          type="text"
+          name="usernameInput"
+          placeholder="Username"
+        />
+        <br /><br />
+        <label for="password">Password </label>
+        &#128274;
+        <input
+          id="passwordInput"
+          type="password"
+          name="passwordInput"
+          placeholder="Password"
+        />
+        <br /><br />
+
+        <button style="height:60px;" class="btn btn-outline">
+          <a href="/"> For Student Login page Click Here &#128072;</a></button>
+
+        <button
+          style="height:60px;width:90px;"
+          class="btn"
+          id="login-button"
+          type="submit"
+        >Login</button>
+
+      </form>
+
+    </div>
+
+    <div class="card-footer">
+      <button style="height:60px;" class="btn btn-outline">
+        <a href="/register">Click here to User register &#128072;</a></button>
+      <button style="height:60px;" class="btn btn-outline"><a
+          href="/instructor/instructor_register"
+        >Click here to Intructor Register &#128072;</a></button>
+    </div>
+  </div>
+
+  {{#if error}}
+    <h6>{{error}}</h6>
+  {{/if}}
+
+</main>

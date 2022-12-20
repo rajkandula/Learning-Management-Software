@@ -1,0 +1,39 @@
+
+
+{{> instructor_page/head_nav}}
+ {{> instructor_page/sidenavigation}}
+
+
+
+ <div class="main_content">
+        <div class="header">Instructor Profile.
+          <a href="/instructor/instructorEditUser"> Edit User <i class="fa fa-pen"></i> </a>
+        </div>
+       
+       <div class="info">
+
+
+{{!-- <h4>Welcome</h4> --}}
+<h2>First Name: {{fname}}</h2>
+<h2>Last Name: {{lname}}</h2>
+<h2>Username: {{user}}</h2>
+<h2>Email Address: {{email}}</h2>
+<h2>Dat of Birth: {{dob}}</h2>
+<h2>Gender: {{gender}}</h2>
+<h2>Street Address: {{saddress}}</h2>
+<h2>City: {{city}}</h2>
+<h2>ZIP Code: {{zipcode}}</h2>
+<h2>Country: {{country}}</h2>
+<h2>Phone Number: {{phonenumber}}</h2>
+
+<h2>Current Date/Time : {{date_time}}</h2>
+
+{{!-- logout --}}
+{{!-- <a href="/logout">Logout</a> --}}
+
+</div>
+      </div>
+      
+     
+
+{{> instructor_page/footer}}

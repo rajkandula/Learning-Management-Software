@@ -1,0 +1,59 @@
+{{> instructor_page/head_nav}}
+ {{> instructor_page/sidenavigation}}
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/style1.css">
+
+
+
+    <div class="container">
+        <form action="/instructor/createQuizz" id="form" method="post">
+            <h1>Add a quiz question</h1>
+            <div class="input-control">
+                <label for="CourseCode">Enter Course code</label>
+                <input type="text" name="courseIdInput" id="courseIdInput">
+
+            </div>
+
+
+            <div class="input-control">
+                <label for="question">Enter the Question</label>
+                <input type="text" id="questionInput" name="questioninput">
+            </div>
+
+            <div class="input-control">
+                <label for="option_a">Enter option 'a':</label>
+                <input type="text" id="option_a_Input" name="option_a_Input">
+            </div>
+
+            <div class="input-control">
+                <label for="option_b">Enter option 'b':</label>
+                <input type="text" id="option_b_Input" name="option_b_Input">
+            </div>
+
+            <div class="input-control">
+                <label for="option_c">Enter option 'c':</label>
+                <input type="text" id="option_c_Input" name="option_c_Input">
+            </div>
+
+            <div class="input-control">
+                <label for="option_d">Enter option 'd':</label>
+                <input type="text" id="option_d_Input" name="option_d_Input">
+            </div>
+
+            <div class="input-control">
+                <label for="correct">Enter the correct option for this question:</label>
+                <input type="text" id="correctAnswerInput" name="correctAnswerInput">
+            </div>
+
+            <button type='submit'>Add question</button>
+        </form>
+    </div>
+
+    {{> instructor_page/footer}}
