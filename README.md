@@ -54,7 +54,7 @@ Project UI:
 <img width="1245" alt="Screenshot 2023-03-07 at 5 41 16 PM" src="https://user-images.githubusercontent.com/112989454/223570463-46e8e83c-9a05-4dcf-82ad-377c070e2396.png">
 
 
-## student logout
+## Student && Instructor Logout Page
 
 <img width="477" alt="ocw10" src="https://user-images.githubusercontent.com/112989454/223569703-a2dda6e4-a8d9-4453-81b9-64456427b74f.png">
 
