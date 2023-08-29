@@ -8,7 +8,7 @@ https://youtu.be/XhVS9abSYXs
 
 Click on the image below to watch a video demonstration of our OnlineCourseWebsite:
 
-[![Solar Project Management 2023 - Team 15 (AgSp)](https://img.youtube.com/vi/XhVS9abSYXs/1.jpg)](https://youtu.be/8tX7jDgXXX0)
+[![OnlineCourseWebsite 2023](https://img.youtube.com/vi/XhVS9abSYXs/1.jpg)](https://youtu.be/8tX7jDgXXX0)
 
 Project UI:
 
