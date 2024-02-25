@@ -1,6 +1,8 @@
-## OnlineCourseWebsite
-Welcome to Online Course Website Project 🎓 Online Course Website is a Learning platform. 
-Where instructor can create a new courses and students can register for the courses, and students can take quizz exams on the course.
+Project: Learning Management Software
+
+Description: Learning Management System is software that helps to create, share, and manage various training courses and educational content. It is a user-friendly platform connecting instructors and students. Where Instructors create courses and students enroll for it. To provide these functionalities, LMS includes various tools that simplify the creation of educational content, attaching notes files, providing resource links, and attaching video materials, as well as establish the entire learning process through thorough pacing, various assessments, grading systems, and much more.
+
+
 
 ## Project Video Demo Here 
 https://youtu.be/XhVS9abSYXs
